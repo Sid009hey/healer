@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+  </head>
+  <title>Health Tracker | Home</title>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>Health Tracker</h1>
+      </div>
+      <div class="abouts">
+        <h2>↓ Documents and Check Ups ↓</h2>
+       </div>
+      <div class="grid" id="song-list" style="grid-template-columns: repeat(1, 1fr);">
+        <div class="grid-item">
+            <h1 class="grid-title">Welcome Back!</h1>
+            <a href="#">Data Below</a>
+        </div>
+          </div>
+          <div class="userName">
+          <form action="/track" method="GET" style="margin-top: 25px;">
+               <input type="text" id="userNameInput" class="grid-item" placeholder="Enter Illness" name="userDisHt" style="padding-left: 110px;">
+               <input type="text-input" id="userPasswordInput" class="grid-item" placeholder="Enter Medicine" name="userMedHt" style="padding-left: 80.5px; padding-right: 80.5px; text-align: center;">
+               <input type="submit" value="Upload" class="grid-item" style="padding-left: 100px; padding-right: 100px;">
+          </form>
+          <div class="grid" id="song-list" style="grid-template-columns: repeat(2, 1fr);">
+                  <div class="grid-item" style="margin-top: 10px;">
+            <h1 class="grid-title">Recommended Check-Up</h1>
+            <a href="#">Check Every</a>
+            <a href="#">{{ userDisDays }} Days</a>
+
+            </div>
+                              <div class="grid-item" style="margin-top: 10px;">
+            <h1 class="grid-title">Self Treatment</h1>
+            <a href="#">Check tips for treating</a>
+            <a href="{{ googleDis }}">{{ userDis }}</a>
+
+            </div>
+        </div>
+        </div>
+	</div>
+  </body>
+</html>

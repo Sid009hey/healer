@@ -1,0 +1,219 @@
+/*imports start*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+/*imports end*/
+
+input[type="text"] {
+  /* Set the color to your desired value */
+  color: #ffffff; /* This sets the text color to red (#ff0000) */
+  font-size:20px;
+}
+
+input[type="text-input"] {
+  /* Set the color to your desired value */
+  color: #ffffff; /* This sets the text color to red (#ff0000) */
+  font-size:20px;
+  margin-left: 10px;
+}
+
+input[type="submit"] {
+  /* Set the color to your desired value */
+  color: gray; /* This sets the text color to red (#ff0000) */
+  font-size:20px;
+  margin-left: 10px;
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+/*  background-image: url("./background.png"); */
+  background-image: url("./background.png");
+  background-color: #2e3440;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.grid {
+  margin-top:20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.grid1 {
+  margin-top:40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin-bottom: 20px;
+}
+
+.grid-item {
+  border: 1px transparent;
+  background-color: #121212;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #2e3440;
+}
+
+.grid-item{
+    opacity: 0.8;
+	transition: 0.2s ease;
+}
+
+.grid-item:hover{
+	box-shadow: 0px 0px 23px #88c0d0;
+
+}
+
+.grid-item a{
+  color: #BF616A;
+  font-size: 25px;
+}
+
+.grid-item a:hover{
+  color: #BF616A;
+  text-decoration: underline;
+}
+
+.grid-item h1{
+  color: #eceff4;
+}
+
+.grid-item img{
+  height: 90px;
+  width: auto;
+}
+
+.grid-item input[type="text"] {
+  color: white;
+  /* Any other input-specific styling you want */
+}
+
+
+.title{
+  margin-top:0%;
+}
+
+.title h1 {
+  color: #bf616a;
+  text-shadow: 0px 0px 23px #bf616a;
+  font-size: 50px;
+}
+
+.subtitle {
+  color: #007fd5;
+  text-shadow: 0px 0px 23px #007fd5;
+	margin-top: 40px;
+}
+
+.title a {
+  color: #88c0d0;
+  animation: blink_cursor 1s linear infinite;
+}
+
+h2{
+  color: #121212;
+  opacity: 0.7;
+  font-size: 30px;
+  animation: blink_cursor 3s linear infinite;
+}
+
+a {
+  color: #1DB954;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#search-input{
+  width: 50%;
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px solid transparent;
+  font-size: 1.2em;
+  background-color: #121212;
+  color: #fff;
+  box-shadow: 0px 0px 23px #2e3440;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+  /* Adjust font sizes */
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 16px;
+  }
+  /* Adjust grid layout */
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+	margin-right: 30px;
+	margin-bottom: 20px;
+  }
+  .grid1 {
+    grid-template-columns: 1fr;
+    gap: 30px;
+	margin-right: 30px;
+	margin-bottom: 20px;
+  }
+  /* Center search bar */
+  .search-container {
+    display: flex;
+    justify-content: center;
+  }
+  /* Make search bar full width */
+  #search-input {
+    width: 70%;
+  }
+  /* Adjust grid item layout */
+  .grid-item {
+    width: 100%;
+  }
+}
+
+.userName{
+    margin-top:10px;
+}
+
+/*.blink_me {
+  animation: blinker 1s linear infinite;
+}*/
+
+@keyframes blinker {
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes blink_cursor {
+  50% {
+    opacity: 0.2;
+  }
+}
+
+@keyframes blink_item {
+  50% {
+    opacity: 0.87;
+  }
+}

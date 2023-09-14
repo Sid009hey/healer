@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="./static/style.css">
+    <title>HealthTrack - List</title>
+</head>
+<body>
+<div class="title">
+    <h1>Uploaded Images</h1>
+</div>
+<div class="uploadform">
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <div class="browsebtn">
+            <input type="file" id="file" name="file">
+        </div>
+        <input type="submit" value="Upload">
+    </form>
+</div>
+
+    <div class="image-grid">
+        {% for image in images %}
+            <img src="{{ url_for('static', filename='uploads/' + image) }}" alt="{{ image }}">
+        {% endfor %}
+    </div>
+</body>
+</html>
